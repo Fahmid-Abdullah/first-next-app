@@ -2,11 +2,11 @@
 import { useState, FormEvent } from "react";
 import { useRouter } from 'next/navigation';
 
-export default function page() {
+const Page = () => {
   const [inputVal, setInputVal] = useState("");
   const { push } = useRouter();
 
-  const handleSubmit = (event:FormEvent) => {
+  const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
     push(`/prediction/${inputVal}`);
   }
@@ -23,3 +23,5 @@ export default function page() {
     </div>
   )
 }
+
+export default Page;
