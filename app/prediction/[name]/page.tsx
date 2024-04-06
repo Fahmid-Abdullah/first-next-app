@@ -26,7 +26,7 @@ export default async function page({ params }: Params) {
 
   return <div>
     <div>
-      <h1>{params.name}'s Personal Info</h1>
+      <h1>{params.name}&apos;s Personal Info</h1>
       <div>Age: {age?.age}</div>
       <div>Gender: {gender?.gender}</div>
       <div>Country: {country?.country[0]?.country_id}</div>
